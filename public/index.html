@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0A1C2B" />
+  <meta name="description" content="Premium Real Estate & Construction Excellence. Luxury apartments and professional construction services." />
+  <meta name="keywords" content="real estate, construction, luxury apartments, property development, Brooklyn" />
+  <meta property="og:title" content="Premium Real Estate & Construction" />
+  <meta property="og:description" content="Experience luxury living with premium amenities and expert construction services" />
+  <meta property="og:type" content="website" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/EstateConstructLogo.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>Estate & Construct</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: {
+            50: '#e8eef3',
+            100: '#d1dde7',
+            200: '#a3bbcf',
+            300: '#7599b7',
+            400: '#47779f',
+            500: '#195587',
+            600: '#0F3E5C',
+            700: '#0A1C2B',
+            800: '#081622',
+            900: '#061119',
+            950: '#030b0e',
+          },
+          accent: {
+            400: '#D4B366',
+            500: '#C9A24D',
+            600: '#B89440',
+            700: '#9F7C2F',
+            800: '#7A5F24',
+          },
+          grey: {
+            100: '#F5F7F6',
+            200: '#E8ECEB',
+            300: '#D9DFDE',
+            400: '#C9D1CF',
+            500: '#A8B2B0',
+          }
+        },
+        letterSpacing: {
+          'elegant': '0.02em',
+          'wide-elegant': '0.04em',
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
 </html>
